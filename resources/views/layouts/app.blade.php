@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('css/fancybox.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
@@ -37,16 +38,16 @@
 <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
 
 <!-- JS FILES -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/isotope.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src='js/TweenMax.min.js'></script>
-<script src='js/odometer.min.js'></script>
-<script src='js/fancybox.min.js'></script>
-<script src='js/wow.min.js'></script>
-<script src='js/scripts.js'></script>
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('js/isotope.min.js')}}"></script>
+<script src="{{asset('js/swiper.min.js')}}"></script>
+<script src='{{asset('js/TweenMax.min.js')}}'></script>
+<script src='{{asset('js/odometer.min.js')}}'></script>
+<script src='{{asset('js/fancybox.min.js')}}'></script>
+<script src='{{asset('js/wow.min.js')}}'></script>
+<script src='{{asset('js/scripts.js')}}'></script>
 
 
 </body>

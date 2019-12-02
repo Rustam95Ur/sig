@@ -1,26 +1,26 @@
-@charset "UTF-8";
-/* CUSTOM FONTS */
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Regular.eot");
-  src: local("☺"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype"), url("../fonts/Mont-Regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Bold.eot");
-  src: local("☺"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype"), url("../fonts/Mont-Bold.svg") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Heavy.eot");
-  src: local("☺"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("truetype"), url("../fonts/Mont-Heavy.svg") format("svg");
-  font-weight: 800;
-  font-style: normal;
-}
+/*@charset "UTF-8";*/
+/*!* CUSTOM FONTS *!*/
+/*@font-face {*/
+/*  font-family: "Mont";*/
+/*  src: url("../fonts/Mont-Regular.eot");*/
+/*  src: local("☺"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype"), url("../fonts/Mont-Regular.svg") format("svg");*/
+/*  font-weight: 400;*/
+/*  font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Mont";*/
+/*  src: url("../fonts/Mont-Bold.eot");*/
+/*  src: local("☺"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype"), url("../fonts/Mont-Bold.svg") format("svg");*/
+/*  font-weight: 600;*/
+/*  font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Mont";*/
+/*  src: url("../fonts/Mont-Heavy.eot");*/
+/*  src: local("☺"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("truetype"), url("../fonts/Mont-Heavy.svg") format("svg");*/
+/*  font-weight: 800;*/
+/*  font-style: normal;*/
+/*}*/
 /* BODY */
 * {
   outline: none !important;
@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding-left: 150px;
   padding-right: 50px;
-  font-family: "Mont";
+  font-family: 'Comfortaa', cursive;
   font-size: 17px;
   color: #282828;
   -webkit-transition: all 0.4s ease-in-out;
@@ -332,7 +332,7 @@ moe .color-dark .left-side ul li a:hover {
   margin: auto;
   width: 100vw;
   height: 100vh;
-  background: #282828;
+  background: #ffffff;
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -397,7 +397,7 @@ moe .color-dark .left-side ul li a:hover {
   font-size: 70vh;
   line-height: 1;
   font-weight: 800;
-  color: #fff;
+  color: #000000;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1050,6 +1050,19 @@ moe .color-dark .left-side ul li a:hover {
   left: 50px;
   bottom: 35px;
   display: none;
+}
+
+.left-side .lang-bnt {
+    left: 50px;
+    bottom: 100px;
+    width: 50px;
+    padding: 12px;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.color-dark .left-side .lang-bnt {
+    color: white;
 }
 .left-side .gotop img {
   display: block;

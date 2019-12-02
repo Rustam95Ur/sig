@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     'locales' =>[
         'ru'=>['name'=>'ru', 'db_prefix','ru_','locale' => 'ru_RU.utf8'],
@@ -98,7 +98,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------

@@ -2,28 +2,28 @@
     <div class="inner">
         <div class="side-menu">
             <ul>
-                <li><a href="agensy.html">Agensy</a></li>
-                <li><a href="cases.html">Cases</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.home')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.about')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.case')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.contact')}}</a></li>
             </ul>
         </div>
         <!-- end side-menu -->
         <div class="sides">
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1552081224273" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=43.2196700,76.9156200&amp;q=Almaty+(SmartInnovationGroup)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" width="600" height="450" style="border:0" allowfullscreen></iframe>
             </div>
             <!-- end map -->
-            <figure><img src="images/office01.jpg" alt="Image">
-                <a href="#map" data-fancybox><img src="images/icon-map-marker.svg" alt="Image"></a>
+            <figure><img src="{{asset('images/office.jp')}}g" alt="Image">
+                <a href="#map" data-fancybox><img src="{{asset('images/icon-map-marker.svg')}}" alt="Image"></a>
             </figure>
         </div>
         <!-- end sides -->
-        <div class="sides"><h2>Agensy is a creative portfolio <strong>Themeforest</strong> layout will help freelancers and digital agencies to create unique websites.</h2>
-            <address>Kristiatik 15th Street, Floot 17<br>
-                Kiev, Ukraine 78692<br>
-                <a href="#">hello@agensy.com.ua </a>
-                +380 98 294 80 86
+        <div class="sides"><h2>{{trans('header.slogan')}}</h2>
+            <address>{{trans('header.address')}}<br>
+                <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>
+                <a href="tel:87717469953">8 771 746 99 53</a>
+                <a href="tel:87717838759">8 771 783 87 59</a>
             </address>
         </div>
         <!-- end sides -->
@@ -33,28 +33,29 @@
 <!-- end navigation-menu -->
 <aside class="left-side">
     <div class="logo">
-        <img src="images/logo-symbol.png" alt="Image">
+        <img src="{{asset('images/logo-symbol.png')}}" alt="Image">
     </div>
     <ul>
-        <li><a href="#">FACEBOOK</a></li>
-        <li><a href="#">BEHANCE</a></li>
-        <li><a href="#">DRIBBLE</a></li>
+        <li><a href="https://www.facebook.com/smartinnovationgroup2019/" target="_blank">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
+
     </ul>
-    <a href="#top" class="gotop"><img src="images/icon-gotop.svg" alt="Image"></a>
+    <a href="" class="lang-bnt">RU</a>
+    <a href="#top" class="gotop"><img src="{{asset('images/icon-gotop.svg')}}" alt="Image"></a>
 </aside>
 <!-- end left-side -->
 <header class="header">
     <nav class="navbar">
-        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
+        <div class="logo"> <a href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" alt="Image"></a> </div>
         <!-- end logo -->
-        <div class="phone"> T: +330 294 05 11 </div>
+        <div class="phone"> T: <a href="tel:87717469953">8 771 746 99 53</a> </div>
         <!-- end phone -->
         <div class="main-menu">
             <ul>
-                <li><a href="agensy.html">Agensy</a></li>
-                <li><a href="cases.html">Cases</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.home')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.about')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.case')}}</a></li>
+                <li><a href="{{route('home')}}">{{trans('header.contact')}}</a></li>
             </ul>
         </div>
         <!-- end main-menu -->
@@ -75,13 +76,5 @@
         <!-- end hamburger-menu -->
     </nav>
     <!-- end navbar -->
-    <div class="headlines">
-        <div class="container">
-            <h1>Oslo based <br>
-                Digital Agency</h1>
-        </div>
-        <!-- end container -->
-    </div>
-    <!-- end headlines -->
 </header>
 <!-- end header -->

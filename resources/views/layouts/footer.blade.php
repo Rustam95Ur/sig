@@ -16,30 +16,24 @@
                 <figure class="logo"> <img src="images/logo.png" alt="Image"> </figure>
             </div>
             <!-- end col-5 --> <div class="col-lg-4 col-md-6 wow fadeInUp">
-                <h5>Location</h5>
+                <h5>{{trans('footer.address')}}</h5>
                 <address>
-                    Studio Agensy<br>
-                    Kristiatik 15th Street, Floot 17<br>
-                    Kiev, Ukraine 78692
+                    {{trans('header.address')}}
                 </address>
             </div>
             <!-- end col-4 -->
             <div class="col-lg-3 col-md-6 wow fadeInUp">
-                <h5>Say Hello</h5>
+                <h5>{{trans('footer.contacts')}}</h5>
                 <address>
-                    hello@agensy.com.ua <br>
-                    +380 98 294 80 86
+                    <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>
+                    <a href="tel:87717469953">8 771 746 99 53</a>
+                    <a href="tel:87717838759">8 771 783 87 59</a>
                 </address>
             </div>
             <!-- end col-3 -->
             <div class="col-12 wow fadeInUp">
                 <div class="sub-footer">
-                    <ul>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Term & Condutions</a></li>
-                        <li><a href="#">Awwwards</a></li>
-                    </ul>
-                    <span>© 2019 Agensy - All rights Reserved</span> </div>
+                    <span>© {{date('Y')}} SmartInnovationGroup -{{trans('footer.copyright')}}</span> </div>
                 <!-- end sub-footer -->
             </div>
             <!-- end col-12 -->

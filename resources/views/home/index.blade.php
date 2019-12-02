@@ -1,5 +1,13 @@
 @extends('layouts.app')
 @section('content')
+    <header class="header">
+        <div class="headlines">
+            <div class="container">
+                <h1>{{trans('page.home-header')}}</h1>
+            </div>
+            <!-- end container -->
+        </div>
+    </header>
     <section class="slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
