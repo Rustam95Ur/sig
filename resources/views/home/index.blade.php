@@ -11,9 +11,8 @@
     <section class="slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-background="images/slide01.jpg">
+                <div class="swiper-slide" data-background="{{trans('images/slider/slide-1.jpg')}}">
                     <div class="slide-inner">
-                        <figure><img src="images/client01.png" alt="Image"></figure>
                         <h2>Space in typographical terms is usually</h2>
                         <div class="link">
                             <a href="#">SEE CASE STUDY</a>
@@ -23,9 +22,8 @@
                     <!-- end slide-inner -->
                 </div>
                 <!-- end swiper-slide -->
-                <div class="swiper-slide" data-background="images/slide02.jpg">
+                <div class="swiper-slide" data-background="{{trans('images/slider/slide-2.jpg')}}">
                     <div class="slide-inner">
-                        <figure><img src="images/client02.png" alt="Image"></figure>
                         <h2>Space in typographical terms is usually</h2>
                         <div class="link">
                             <a href="#">SEE CASE STUDY</a>
@@ -35,9 +33,8 @@
                     <!-- end slide-inner -->
                 </div>
                 <!-- end swiper-slide -->
-                <div class="swiper-slide" data-background="images/slide03.jpg">
+                <div class="swiper-slide" data-background="{{trans('images/slider/slide-3.jpg')}}">
                     <div class="slide-inner">
-                        <figure><img src="images/client03.png" alt="Image"></figure>
                         <h2>Space in typographical terms is usually</h2>
                         <div class="link">
                             <a href="#">SEE CASE STUDY</a>
@@ -62,10 +59,9 @@
             <ul>
                 <li>
                     <div class="titles">
-                        <h2>Explore recent works</h2>
-                        <p>We’re constantly refining our product. Adding new features. Working to help your section
-                            business grow.</p>
-                        <div class="custom-btn"><a href="#">See all cases<span></span> <i></i></a></div>
+                        <h2>{{trans('home.recent-works-header')}}</h2>
+                        <p>{{trans('home.recent-works-text')}}</p>
+                        <div class="custom-btn"><a href="{{route('home')}}">{{trans('button.see-case')}}<span></span> <i></i></a></div>
                         <!-- end custom-btn -->
                     </div>
                     <!-- end titles -->
