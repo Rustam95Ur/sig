@@ -11,38 +11,18 @@
     <section class="slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-background="{{trans('images/slider/slide-1.jpg')}}">
-                    <div class="slide-inner">
-                        <h2>Space in typographical terms is usually</h2>
-                        <div class="link">
-                            <a href="#">SEE CASE STUDY</a>
+                @foreach($sliders as $slider)
+                    <div class="swiper-slide" data-background="{{Voyager::image($slider->image)}}">
+                        <div class="slide-inner">
+                            <h2>Space in typographical terms is usually</h2>
+                            <div class="link">
+                                <a href="{{route('cases')}}">{{trans('button.see-case')}}</a>
+                            </div>
+                            <!-- end link -->
                         </div>
-                        <!-- end link -->
+                        <!-- end slide-inner -->
                     </div>
-                    <!-- end slide-inner -->
-                </div>
-                <!-- end swiper-slide -->
-                <div class="swiper-slide" data-background="{{trans('images/slider/slide-2.jpg')}}">
-                    <div class="slide-inner">
-                        <h2>Space in typographical terms is usually</h2>
-                        <div class="link">
-                            <a href="#">SEE CASE STUDY</a>
-                        </div>
-                        <!-- end link -->
-                    </div>
-                    <!-- end slide-inner -->
-                </div>
-                <!-- end swiper-slide -->
-                <div class="swiper-slide" data-background="{{trans('images/slider/slide-3.jpg')}}">
-                    <div class="slide-inner">
-                        <h2>Space in typographical terms is usually</h2>
-                        <div class="link">
-                            <a href="#">SEE CASE STUDY</a>
-                        </div>
-                        <!-- end link -->
-                    </div>
-                    <!-- end slide-inner -->
-                </div>
+                @endforeach
                 <!-- end swiper-slide -->
             </div>
             <!-- end swiper-wrapper -->
@@ -61,63 +41,28 @@
                     <div class="titles">
                         <h2>{{trans('home.recent-works-header')}}</h2>
                         <p>{{trans('home.recent-works-text')}}</p>
-                        <div class="custom-btn"><a href="{{route('home')}}">{{trans('button.see-case')}}<span></span> <i></i></a></div>
+                        <div class="custom-btn"><a href="{{route('home')}}">{{trans('button.see-case')}}<span></span>
+                                <i></i></a></div>
                         <!-- end custom-btn -->
                     </div>
                     <!-- end titles -->
                 </li>
+                @foreach($projects as $project)
                 <li>
                     <div class="project-box">
-                        <figure class="project-image reveal-effect masker wow"><a href="images/works01.jpg"
-                                                                                  data-fancybox><img
-                                    src="images/works01.jpg" alt="Image"></a></figure>
+                        <figure class="project-image reveal-effect masker wow">
+                            <a href="{{Voyager::image($project->image)}}" data-fancybox>
+                                <img src="{{Voyager::image($project->image)}}" alt="Image"></a>
+                        </figure>
                         <div class="project-content">
-                            <h3><a href="images/works01.jpg" data-fancybox>Moments Matter Event Studio</a></h3>
-                            <small>Branding — Website</small>
+                            <h3><a href="{{route('cases')}}" data-fancybox>{{$project->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></h3>
+                            <small>{{$project->platform->title}}</small>
                         </div>
                         <!-- end project-content -->
                     </div>
                     <!-- end project-box -->
                 </li>
-                <li>
-                    <div class="project-box">
-                        <figure class="project-image reveal-effect masker wow"><a href="images/works02.jpg"
-                                                                                  data-fancybox><img
-                                    src="images/works02.jpg" alt="Image"></a></figure>
-                        <div class="project-content">
-                            <h3><a href="images/works02.jpg" data-fancybox>More Powered Macbook Pro X</a></h3>
-                            <small>Website — eCommerce</small>
-                        </div>
-                        <!-- end project-content -->
-                    </div>
-                    <!-- end project-box -->
-                </li>
-                <li>
-                    <div class="project-box">
-                        <figure class="project-image reveal-effect masker wow"><a href="images/works03.jpg"
-                                                                                  data-fancybox><img
-                                    src="images/works03.jpg" alt="Image"></a></figure>
-                        <div class="project-content">
-                            <h3><a href="images/works03.jpg" data-fancybox>Stan's Office Online Gateway</a></h3>
-                            <small>Wordpress — eCommerce</small>
-                        </div>
-                        <!-- end project-content -->
-                    </div>
-                    <!-- end project-box -->
-                </li>
-                <li>
-                    <div class="project-box">
-                        <figure class="project-image reveal-effect masker wow"><a href="images/works04.jpg"
-                                                                                  data-fancybox><img
-                                    src="images/works04.jpg" alt="Image"> </a></figure>
-                        <div class="project-content">
-                            <h3><a href="images/works04.jpg" data-fancybox>David Courtney IOS Application</a></h3>
-                            <small>Print — Branding</small>
-                        </div>
-                        <!-- end project-content -->
-                    </div>
-                    <!-- end project-box -->
-                </li>
+                @endforeach
             </ul>
         </div>
         <!-- end container -->
@@ -135,126 +80,17 @@
                     <!-- end titles -->
                 </div>
                 <!-- end col-12 -->
+                @foreach($platforms as $platform)
                 <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon01.svg" alt="Image">
+                    <figure class="reveal-effect masker wow"><img src="{{Voyager::image($platform->image)}}" alt="">
                         <figcaption>
-                            <span>01</span>
-                            <h4>UI-UX DESIGN</h4>
+                            <span>{{$platform->id}}</span>
+                            <h4>{{$platform->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h4>
                         </figcaption>
                     </figure>
                 </div>
+                @endforeach
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon02.svg" alt="Image">
-                        <figcaption>
-                            <span>02</span>
-                            <h4>DESIGN CODING</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon03.svg" alt="Image">
-                        <figcaption>
-                            <span>03</span>
-                            <h4>BRANDING</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon04.svg" alt="Image">
-                        <figcaption>
-                            <span>04</span>
-                            <h4>MARKETTING</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon05.svg" alt="Image">
-                        <figcaption>
-                            <span>05</span>
-                            <h4>IOS APPS</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon06.svg" alt="Image">
-                        <figcaption>
-                            <span>06</span>
-                            <h4>CUSTOM CMS</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon07.svg" alt="Image">
-                        <figcaption>
-                            <span>07</span>
-                            <h4>JAVA APPS</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6">
-                    <figure class="reveal-effect masker wow"><img src="images/icon08.svg" alt="Image">
-                        <figcaption>
-                            <span>08</span>
-                            <h4>eCOMMERCE</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col-3 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end featured-services -->
-    <section class="recent-news">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-12 wow fadeInUp">
-                    <div class="content-box selected">
-                        <small>Creative, WordPress</small>
-                        <h3><a href="blog-single.html">We're Making Office Changes & Introducing our New Office</a></h3>
-                        <span>17 September, 2019</span>
-                    </div>
-                    <!-- end content-box -->
-                </div>
-                <!-- end col-12 -->
-                <div class="col-lg-4 wow fadeInUp">
-                    <div class="content-box">
-                        <small>Creative, WordPress</small>
-                        <h3><a href="blog-single.html">We're Making Office Changes & Introducing our New Office</a></h3>
-                        <span>17 September, 2019</span>
-                    </div>
-                    <!-- end content-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 wow fadeInUp">
-
-                    <div class="content-box">
-                        <small>Development, Browser</small>
-                        <h3><a href="blog-single.html">The New Chrome and Safari Will Reshape the Web for Authors</a>
-                        </h3>
-                        <span>22 October, 2019</span>
-                    </div>
-                    <!-- end content-box -->
-                </div>
-                <!-- end col-4 -->
-
-                <div class="col-lg-4 wow fadeInUp">
-                    <div class="content-box">
-                        <small>Security, Internet</small>
-                        <h3><a href="blog-single.html">Half the Web Is Now Encrypted hat Makes Everyone Safery</a></h3>
-                        <span>30 November, 2019</span>
-                    </div>
-                    <!-- end content-box -->
-                </div>
-                <!-- end col-4 -->
             </div>
             <!-- end row -->
         </div>
@@ -274,7 +110,7 @@
                     <figure><img src="images/awards01.png" alt="Image"></figure>
                     <h5>CSS Design Award</h5>
                     <small>Site of the day</small>
-                    <span class="odometer" data-count="4" data-status="yes">0</span></li>
+                    <span class="odometer" data-count="5" data-status="yes">0</span></li>
                 <li class="wow fadeInUp" data-wow-delay="0.05s">
                     <figure><img src="images/awards02.png" alt="Image"></figure>
                     <h5>FWA Award</h5>

@@ -390,7 +390,7 @@ moe .color-dark .left-side ul li a:hover {
   animation: fadeInUp ease 0.6s;
 }
 .preloader .inner .logo img {
-  height: 50px;
+  /*height: 50px;*/
 }
 .preloader .inner .percentage {
   width: 100%;
@@ -772,7 +772,7 @@ moe .color-dark .left-side ul li a:hover {
   text-transform: uppercase;
   padding: 0 30px;
   padding-top: 18px;
-  background: #282828;
+  background: #142ac7;
   color: #fff;
 }
 .custom-btn a:hover {
@@ -876,6 +876,9 @@ moe .color-dark .left-side ul li a:hover {
 .navbar.light .main-menu ul li a {
   color: #fff;
 }
+.navbar.light .phone a {
+    color: #fff;
+}
 .navbar.light .main-menu ul li a:after {
   background: #fff;
 }
@@ -889,7 +892,7 @@ moe .color-dark .left-side ul li a:hover {
   margin: 0;
 }
 .navbar .logo a img {
-  height: 42px;
+  /*height: 42px;*/
 }
 .navbar .phone {
   margin-left: 50px;
@@ -1516,7 +1519,8 @@ moe .color-dark .left-side ul li a:hover {
 }
 .featured-services figure img {
   opacity: 0.1;
-  padding: 0 35%;
+  /*padding: 0 35%;*/
+  padding: 0;
   filter: blur(10px);
 }
 .featured-services figure figcaption {

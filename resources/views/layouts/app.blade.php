@@ -8,7 +8,7 @@
     <title>{{Voyager::setting('site.title')}}</title>
     <!-- FAVICON FILES -->
 
-    <link href="{{asset('ico/favicon.png')}}" rel="shortcut icon">
+    <link href="{{asset('images/logo-symbol.png')}}" rel="shortcut icon">
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
@@ -22,7 +22,7 @@
 <body>
 <div class="preloader">
     <div class="inner">
-        <figure class="logo"><img src="{{asset('images/logo-light.png')}}" alt="Image"></figure>
+        <figure class="logo"><img src="{{asset('images/logo.png')}}" alt="Image"></figure>
         <span class="percentage"></span>
     </div>
     <!-- end inner -->
@@ -33,10 +33,8 @@
 @include('layouts.header')
 @yield('content')
 @include('layouts.footer')
-
 <!-- end footer -->
 <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
-
 <!-- JS FILES -->
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
@@ -48,7 +46,5 @@
 <script src='{{asset('js/fancybox.min.js')}}'></script>
 <script src='{{asset('js/wow.min.js')}}'></script>
 <script src='{{asset('js/scripts.js')}}'></script>
-
-
 </body>
 </html>

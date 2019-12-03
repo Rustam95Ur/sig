@@ -12,14 +12,12 @@
 */
 
 
-
-
 Route::group([
     'middleware' => ['web'],
     'prefix' => Config::get('route_prefix')
 ], function () {
     Route::get('/', 'HomeController@index')->name('home');
-
+    Route::get('/cases', 'PageController@case')->name('cases');
 });
 
 Route::group(['prefix' => 'admin'], function () {
