@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="career wow fadeInUp">
-                    <h6>CAREER OF AGENSY UKRAINE</h6>
-                    <h2>We allways looking for talented peoples, soo let's work together</h2>
-                    <div class="custom-link"><a href="#">Apply Now</a> <span></span> <i></i>
+                    <h6>{{trans('footer.career-agency-header')}}</h6>
+                    <h2>{{trans('footer.career-agency-text')}}</h2>
+                    <div class="custom-link"><a href="#">{{trans('button.join')}}</a> <span></span> <i></i>
                     </div>
                     <!-- end custom-link -->
                 </div>
@@ -13,7 +13,7 @@
             </div>
             <!-- end col-12 -->
             <div class="col-lg-5 wow fadeInUp">
-                <figure class="logo"> <img src="images/logo.png" alt="Image"> </figure>
+                <figure class="logo"> <img src="{{asset('images/logo.png')}}" alt="Image"> </figure>
             </div>
             <!-- end col-5 --> <div class="col-lg-4 col-md-6 wow fadeInUp">
                 <h5>{{trans('footer.address')}}</h5>
@@ -25,9 +25,9 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp">
                 <h5>{{trans('footer.contacts')}}</h5>
                 <address>
-                    <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>
-                    <a href="tel:87717469953">8 771 746 99 53</a>
-                    <a href="tel:87717838759">8 771 783 87 59</a>
+                    <p><a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a></p>
+                    <p><a href="tel:87717469953">8 771 746 99 53</a></p>
+                    <p><a href="tel:87717838759">8 771 783 87 59</a></p>
                 </address>
             </div>
             <!-- end col-3 -->

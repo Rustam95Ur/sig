@@ -5,14 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Translatable;
 
-class Platform extends Model {
+class Client extends Model {
 
     use Translatable;
     protected $translatable = ['title'];
-
-    public function projects()
-    {
-        return $this->hasMany(Project::class);
-    }
-
 }

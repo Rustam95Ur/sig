@@ -843,6 +843,12 @@ moe .color-dark .left-side ul li a:hover {
   margin: 0;
   padding-bottom: 5px;
 }
+.header .headlines h2 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
 
 /* NAVBAR */
 .navbar {
@@ -1646,6 +1652,7 @@ moe .color-dark .left-side ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
+  color: white;
 }
 .our-awards .titles {
   text-align: center;
