@@ -22,4 +22,36 @@ class HomeController extends Controller {
             'clients'   => $clients,
         ]);
     }
+
+    public function about()
+    {
+        return view('home.about', [
+
+        ]);
+    }
+
+    public function cases()
+    {
+        return view('home.cases', [
+
+        ]);
+    }
+
+    public function case($id)
+    {
+        return view('home.case', [
+
+        ]);
+    }
+
+    public function contact()
+    {
+        return view('home.contact', [
+
+        ]);
+    }
+
+
+
+
 }

@@ -3,9 +3,9 @@
         <div class="side-menu">
             <ul>
                 <li><a href="{{route('home')}}">{{trans('header.home')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.about')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.case')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.contact')}}</a></li>
+                <li><a href="{{route('about')}}">{{trans('header.about')}}</a></li>
+                <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
+                <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
             </ul>
         </div>
         <!-- end side-menu -->
@@ -53,9 +53,9 @@
         <div class="main-menu">
             <ul>
                 <li><a href="{{route('home')}}">{{trans('header.home')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.about')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.case')}}</a></li>
-                <li><a href="{{route('home')}}">{{trans('header.contact')}}</a></li>
+                <li><a href="{{route('about')}}">{{trans('header.about')}}</a></li>
+                <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
+                <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
             </ul>
         </div>
         <!-- end main-menu -->

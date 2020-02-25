@@ -17,7 +17,10 @@ Route::group([
     'prefix' => Config::get('route_prefix')
 ], function () {
     Route::get('/', 'HomeController@index')->name('home');
-    Route::get('/cases', 'PageController@case')->name('cases');
+    Route::get('/cases', 'HomeController@cases')->name('cases');
+    Route::get('/case/{id}', 'HomeController@case')->name('case');
+    Route::get('/about', 'HomeController@about')->name('about');
+    Route::get('/contact', 'HomeController@contact')->name('contact');
 });
 
 Route::group(['prefix' => 'admin'], function () {

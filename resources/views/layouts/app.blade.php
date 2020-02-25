@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#282828"/>
     <title>{{Voyager::setting('site.title')}}</title>
     <!-- FAVICON FILES -->
 
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 </head>
 <body>
 <div class="preloader">
@@ -34,7 +34,7 @@
 @yield('content')
 @include('layouts.footer')
 <!-- end footer -->
-<audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
+<audio id="hamburger-hover" src="{{asset('audio/link.mp3')}}" preload="auto"></audio>
 <!-- JS FILES -->
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>

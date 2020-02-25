@@ -2314,7 +2314,7 @@ moe .color-dark .left-side ul li a:hover {
   position: relative;
   margin-bottom: 35px;
 }
-.contact .contact-form #contact .form-group span {
+.contact .contact-form #contact .form-group label {
   width: 100%;
   line-height: 54px;
   position: absolute;
@@ -2328,7 +2328,7 @@ moe .color-dark .left-side ul li a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.contact .contact-form #contact .form-group span.label-up {
+.contact .contact-form #contact .form-group label.label-up {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
@@ -2339,7 +2339,7 @@ moe .color-dark .left-side ul li a:hover {
   position: relative;
   z-index: 2;
 }
-.contact .contact-form #contact .form-group input:focus + span {
+.contact .contact-form #contact .form-group input:focus + label {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
@@ -2350,7 +2350,7 @@ moe .color-dark .left-side ul li a:hover {
   position: relative;
   z-index: 2;
 }
-.contact .contact-form #contact .form-group textarea:focus + span {
+.contact .contact-form #contact .form-group textarea:focus + label {
   font-size: 13px;
   line-height: 16px;
   top: -20px;

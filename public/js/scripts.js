@@ -69,7 +69,7 @@
 
         // CONTACT FORM INPUT LABEL
         function checkForInput(element) {
-            const $label = $(element).siblings('span');
+            const $label = $(element).siblings('label');
             if ($(element).val().length > 0) {
                 $label.addClass('label-up');
             } else {
