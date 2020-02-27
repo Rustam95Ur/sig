@@ -16,19 +16,19 @@
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 wow fadeInUp">
+                <div class="col-md-4 wow fadeInUp">
                     <h5>{{trans('contact.address')}}</h5>
                     <address>Almaty</address>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-md-6 wow fadeInUp">
+                <div class="col-md-4 wow fadeInUp">
                     <h5>{{trans('contact.phone')}}</h5>
                     <address>  <a href="tel:87717469953">8 771 746 99 53</a><br>
                         <a href="tel:87717838759">8 771 783 87 59</a>
                     </address>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-12 wow fadeInUp">
+                <div class="col-4 wow fadeInUp">
                     <h5>{{trans('contact.email')}}</h5>
                     <address>
                         <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>

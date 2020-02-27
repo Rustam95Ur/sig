@@ -32,8 +32,9 @@ class HomeController extends Controller {
 
     public function cases()
     {
+        $projects = Project::where('status', '=', 'ACTIVE')->with('platform')->paginate(10);
         return view('home.cases', [
-
+            'projects' => $projects
         ]);
     }
 

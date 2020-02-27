@@ -267,18 +267,18 @@ moe .color-dark .left-side ul li a:hover {
   margin-right: 5px;
 }
 .pagination li.page-item:first-child a.page-link {
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 .pagination li.page-item.active a.page-link {
   border: 1px solid #282828;
   background: none;
 }
 .pagination li.page-item a.page-link {
-  border: none;
-  color: #282828;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 50%;
+  /*border: none;*/
+  /*color: #282828;*/
+  /*font-size: 13px;*/
+  /*font-weight: 600;*/
+  /*border-radius: 50%;*/
 }
 .pagination li.page-item a.page-link:hover {
   background: none;
@@ -2749,3 +2749,9 @@ moe .color-dark .left-side ul li a:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+.page-item.active .page-link {
+    background-color: #142ac7;
+}
+.page-link {
+    color: #142ac7;
+}
