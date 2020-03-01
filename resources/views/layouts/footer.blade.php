@@ -33,7 +33,7 @@
             <!-- end col-3 -->
             <div class="col-12 wow fadeInUp">
                 <div class="sub-footer">
-                    <span>© {{date('Y')}} SmartInnovationGroup -{{trans('footer.copyright')}}</span> </div>
+                    <span>© {{date('Y')}} SmartInnovationGroup - {{trans('footer.copyright')}}</span> </div>
                 <!-- end sub-footer -->
             </div>
             <!-- end col-12 -->

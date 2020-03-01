@@ -25,8 +25,9 @@ class HomeController extends Controller {
 
     public function about()
     {
+        $clients = Client::all();
         return view('home.about', [
-
+            'clients' => $clients
         ]);
     }
 

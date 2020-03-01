@@ -18,20 +18,20 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>About Agensy</h2>
-                <p>Use this thread to nominate one of your items to be used in a Free File promotion between April 1 and June 30, 2019. This may include our regular month-long “Free File of the Month” promotions, the monthly Free Wordpress Themes landing page, or other initiatives run by the Envato Marketing team.</p>
+                <h2>SMARTINNOVATIONGROUP</h2>
+                <p>{{trans('about.about-us')}}</p>
             </div>
-            <!-- end col-12 -->
-            <div class="col-md-6">
-                <p>
-                    Free files are a powerful motivator for bringing new customers into ThemeForest, and serve to showcase the quality of the rest of the marketplace. Items used in these campaigns receive a significant amount of exposure, which can flow on to more people viewing your profile, portfolio, and the other items you have for sale.</p>
-            </div>
-            <!-- end col-6 -->
-            <div class="col-md-6">
-                <p>
+            {{--<!-- end col-12 -->--}}
+            {{--<div class="col-md-6">--}}
+                {{--<p>--}}
+                    {{--Free files are a powerful motivator for bringing new customers into ThemeForest, and serve to showcase the quality of the rest of the marketplace. Items used in these campaigns receive a significant amount of exposure, which can flow on to more people viewing your profile, portfolio, and the other items you have for sale.</p>--}}
+            {{--</div>--}}
+            {{--<!-- end col-6 -->--}}
+            {{--<div class="col-md-6">--}}
+                {{--<p>--}}
 
-                    Free files are a powerful motivator for bringing new customers into ThemeForest, and serve to showcase the quality of the rest of the marketplace. Items used in these campaigns receive.</p>
-            </div>
+                    {{--Free files are a powerful motivator for bringing new customers into ThemeForest, and serve to showcase the quality of the rest of the marketplace. Items used in these campaigns receive.</p>--}}
+            {{--</div>--}}
             <!-- end col-6 -->
         </div>
         <!-- end row -->
@@ -44,9 +44,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="titles">
-                    <h6>PROIT SERVICES</h6>
-                    <p>We’re constantly refining our product. Adding new features.  Working to
-                        help your business grow.</p>
+                    <h6>{{trans('about.our-services')}}</h6>
+                    <p>{{trans('about.our-services-description')}}</p>
                 </div>
                 <!-- end titles -->
             </div>
@@ -130,48 +129,47 @@
     <!-- end container -->
 </section>
 <!-- end main-services -->
-<section class="our-awards">
-    <div class="container">
-        <div class="titles">
-            <h6>AWARDS & PRIZES</h6>
-            <p>We’re constantly refining our product. Adding new features.  Working to
-                help your business grow.</p>
-        </div>
-        <!-- end titles -->
-        <ul>
-            <li class="wow fadeInUp" data-wow-delay="0s">
-                <figure><img src="images/awards01.png" alt="Image"></figure>
-                <h5>CSS Design Award</h5>
-                <small>Site of the day</small> <span class="odometer" data-count="4" data-status="yes">0</span> </li>
-            <li class="wow fadeInUp" data-wow-delay="0.05s">
-                <figure><img src="images/awards02.png" alt="Image"></figure>
-                <h5>FWA Award</h5>
-                <small>Honorable Mention</small> <span class="odometer" data-count="9" data-status="yes">0</span> </li>
-            <li class="wow fadeInUp" data-wow-delay="0.10s">
-                <figure><img src="images/awards03.png" alt="Image"></figure>
-                <h5>Web Design Award</h5>
-                <small>Selected Web</small> <span class="odometer" data-count="6" data-status="yes">0</span> </li>
-            <li class="wow fadeInUp" data-wow-delay="0.15s">
-                <figure><img src="images/awards04.png" alt="Image"></figure>
-                <h5>W3 Award</h5>
-                <small>Site of the day</small> <span class="odometer" data-count="2" data-status="yes">0</span> </li>
-            <li class="wow fadeInUp" data-wow-delay="0.20s">
-                <figure><img src="images/awards05.png" alt="Image"></figure>
-                <h5>CSS Awwwards</h5>
-                <small>Web of week</small> <span class="odometer" data-count="7" data-status="yes">0</span> </li>
-        </ul>
-    </div>
-    <!-- end container -->
-</section>
+{{--<section class="our-awards">--}}
+    {{--<div class="container">--}}
+        {{--<div class="titles">--}}
+            {{--<h6>AWARDS & PRIZES</h6>--}}
+            {{--<p>We’re constantly refining our product. Adding new features.  Working to--}}
+                {{--help your business grow.</p>--}}
+        {{--</div>--}}
+        {{--<!-- end titles -->--}}
+        {{--<ul>--}}
+            {{--<li class="wow fadeInUp" data-wow-delay="0s">--}}
+                {{--<figure><img src="images/awards01.png" alt="Image"></figure>--}}
+                {{--<h5>CSS Design Award</h5>--}}
+                {{--<small>Site of the day</small> <span class="odometer" data-count="4" data-status="yes">0</span> </li>--}}
+            {{--<li class="wow fadeInUp" data-wow-delay="0.05s">--}}
+                {{--<figure><img src="images/awards02.png" alt="Image"></figure>--}}
+                {{--<h5>FWA Award</h5>--}}
+                {{--<small>Honorable Mention</small> <span class="odometer" data-count="9" data-status="yes">0</span> </li>--}}
+            {{--<li class="wow fadeInUp" data-wow-delay="0.10s">--}}
+                {{--<figure><img src="images/awards03.png" alt="Image"></figure>--}}
+                {{--<h5>Web Design Award</h5>--}}
+                {{--<small>Selected Web</small> <span class="odometer" data-count="6" data-status="yes">0</span> </li>--}}
+            {{--<li class="wow fadeInUp" data-wow-delay="0.15s">--}}
+                {{--<figure><img src="images/awards04.png" alt="Image"></figure>--}}
+                {{--<h5>W3 Award</h5>--}}
+                {{--<small>Site of the day</small> <span class="odometer" data-count="2" data-status="yes">0</span> </li>--}}
+            {{--<li class="wow fadeInUp" data-wow-delay="0.20s">--}}
+                {{--<figure><img src="images/awards05.png" alt="Image"></figure>--}}
+                {{--<h5>CSS Awwwards</h5>--}}
+                {{--<small>Web of week</small> <span class="odometer" data-count="7" data-status="yes">0</span> </li>--}}
+        {{--</ul>--}}
+    {{--</div>--}}
+    {{--<!-- end container -->--}}
+{{--</section>--}}
 <!-- end our-awards -->
 <section class="team" data-color="dark">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="titles">
-                    <h6>TEAM MEMBERS</h6>
-                    <p>We’re constantly refining our product. Adding new features.  Working to
-                        help your business grow.</p>
+                    <h6>{{ trans('about.team-member') }}</h6>
+                    <p>{{trans('about.team-member-description')}}</p>
                 </div>
                 <!-- end titles -->
             </div>
@@ -229,95 +227,16 @@
 <section class="logos">
     <div class="container">
         <div class="titles">
-            <h6>SELECTED CLIENTS</h6>
-            <p>We’re constantly refining our product. Adding new features.  Working to
-                help your business grow.</p>
+            <h6>{{trans('home.clients-header')}}</h6>
         </div>
         <!-- end titles -->
         <ul class="wow fadeInUp">
-            <li>
-                <figure><img src="images/logo01.png" alt="Image">
-                    <img src="images/logo05.png" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure><img src="images/logo02.png" alt="Image">
-                    <img src="images/logo15.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo03.png" alt="Image">
-                    <img src="images/logo12.png" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure><img src="images/logo04.png" alt="Image">
-                    <img src="images/logo11.png" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure><img src="images/logo05.png" alt="Image">
-                    <img src="images/logo06.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo06.png" alt="Image">
-                    <img src="images/logo02.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo07.png" alt="Image">
-                    <img src="images/logo07.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo08.png" alt="Image">
-                    <img src="images/logo13.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo09.png" alt="Image">
-                    <img src="images/logo16.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo10.png" alt="Image">
-                    <img src="images/logo15.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo11.png" alt="Image">
-                    <img src="images/logo01.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo12.png" alt="Image">
-                    <img src="images/logo06.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo13.png" alt="Image">
-                    <img src="images/logo04.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo14.png" alt="Image">
-                    <img src="images/logo11.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo15.png" alt="Image">
-                    <img src="images/logo10.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo04.png" alt="Image">
-                    <img src="images/logo12.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo05.png" alt="Image">
-                    <img src="images/logo08.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo06.png" alt="Image">
-                    <img src="images/logo03.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo07.png" alt="Image">
-                    <img src="images/logo02.png" alt="Image"></figure>
-            </li>
-            <li>
-                <figure><img src="images/logo08.png" alt="Image">
-                    <img src="images/logo10.png" alt="Image"></figure>
-            </li>
+            @foreach($clients as $client)
+                <li>
+                    <figure><img src="{{Voyager::image($client->image)}}" alt="{{$client->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}">
+                        <img src="{{Voyager::image($client->image)}}" alt="{{$client->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}"></figure>
+                </li>
+            @endforeach
         </ul>
     </div>
     <!-- end container -->
@@ -325,13 +244,13 @@
 <!-- end logos -->
 <section class="work-with-us" data-color="dark">
     <div class="container wow fadeInUp">
-        <h6>WORK WITH PRO TEAM</h6>
-        <h2>Would you like to have professional project?
-            Let's talk about it!</h2>
-        <p><a href="#">hire-us@agensy.com.ua</a></p>
-        <small>Or</small>
-        <p>+380 98 294 80 85</p>
+        <h6>{{trans('home.work-with-header')}}</h6>
+        <h2>{{trans('home.work-with-text')}}</h2>
+        <p><a href="#">hire-us@smartinnovationgroup.kz</a></p>
+        <p><a href="tel:87717469953">8 771 746 99 53</a></p>
+        <p><a href="tel:87717838759">8 771 783 87 59</a></p>
     </div>
     <!-- end container -->
 </section>
+<!-- end work-with-us -->
 @endsection
