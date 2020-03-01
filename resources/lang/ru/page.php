@@ -2,7 +2,7 @@
 
 return [
 
-    'home-header'           => 'ИТ решения для Вашего бизнеса',
+    'home-header'           => 'IT решения для Вашего бизнеса',
     'contact-header'        => 'Контакты',
     'cases-header'          => 'Портфолио',
     'about-header'          => 'О нас',

@@ -83,7 +83,7 @@
                 <!-- end col-12 -->
                 @foreach($platforms as $platform)
                     <div class="col-lg-3 col-md-6">
-                        <figure class="reveal-effect masker wow"><img src="{{Voyager::image($platform->image)}}" alt="">
+                        <figure class="reveal-effect masker wow"><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt="">
                             <figcaption>
                                 <span>{{$platform->id}}</span>
                                 <h4>{{$platform->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h4>

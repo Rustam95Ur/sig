@@ -1304,7 +1304,8 @@ moe .color-dark .left-side ul li a:hover {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #282828;
+  /*background: #282828;*/
+    text-align: center;
 }
 .page-header .video-bg {
   width: 100%;
@@ -1524,10 +1525,9 @@ moe .color-dark .left-side ul li a:hover {
   color: #282828;
 }
 .featured-services figure img {
-  opacity: 0.1;
-  /*padding: 0 35%;*/
-  padding: 0;
-  filter: blur(10px);
+    opacity: 0.1;
+    padding: 0 35%;
+    filter: blur(10px);
 }
 .featured-services figure figcaption {
   width: 100%;
@@ -2754,4 +2754,7 @@ moe .color-dark .left-side ul li a:hover {
 }
 .page-link {
     color: #142ac7;
+}
+.case-image {
+    width: unset !important;
 }

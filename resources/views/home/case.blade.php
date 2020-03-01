@@ -5,8 +5,7 @@
     <!-- end navbar -->
     <div class="page-title">
         <div class="container">
-            <h2>David Courtney</h2>
-            <h4>Agensy is compatible with popular WordPress plugins</h4>
+            <h2>{{$project->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h2>
         </div>
         <!-- end container -->
     </div>
@@ -15,7 +14,7 @@
 <!-- end header -->
 <section class="page-header">
     <figure>
-        <img src="images/works-detail03.jpg" alt="Image">
+        <img class='case-image' src="{{Voyager::image($project->image)}}" alt="{{$project->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}">
     </figure>
 </section>
 <!-- end page-header -->
@@ -23,43 +22,14 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-lg-8">
-                <h5>CASE REVIEW</h5>
-                <p>Solution for the morning preparation with every guy’s first date in mind by creating a neat branding finding a self lenguage with the minimal elements possible. Taking care about everything goes right at that special day is the main goal and best briefing possible.</p>
-            </div>
-            <!-- end col-8 -->
-            <div class="col-md-6">
-                <h6>CASE TIMELINE</h6>
-                <p>2018 - 2019 September</p>
+                <h5>{{trans('case.description')}}</h5>
+                <p>{{$project->getTranslatedAttribute('body', $locale, 'fallbackLocale')}}</p>
             </div>
             <!-- end col-6 -->
             <div class="col-md-6">
-                <h6>BRAND</h6>
-                <p>David Courtney | Digital Works</p>
+                <h6>{{trans('case.link')}}</h6>
+                <p><a href="//{{$project->link}}" target="_blank">{{$project->link}}</a></p>
             </div>
-            <!-- end col-6 -->
-            <div class="col-12"><figure><img src="images/works-detail02.jpg" alt="Image"></figure></div>
-            <!-- end col-12 -->
-            <div class="col-lg-8">
-                <h5>WIREFRAMING</h5>
-                <p>Solution for the morning preparation with every guy’s first date in mind by creating a neat branding finding a self lenguage with the minimal elements possible. Taking care about everything goes right at that special day is the main goal and best briefing possible.</p>
-            </div>
-            <!-- end col-8 -->
-            <div class="col-lg-6"><figure><img src="images/works-detail03.jpg" alt="Image"></figure></div>
-            <!-- end col-6 -->
-            <div class="col-lg-6"><figure><img src="images/works-detail04.jpg" alt="Image"></figure></div>
-            <!-- end col-6 -->
-            <div class="col-md-6">
-                <h6>COLORS</h6>
-                <p>Blue | Gray | Black | White</p>
-            </div>
-            <!-- end col-6 -->
-            <div class="col-md-6">
-                <h6>ICONS</h6>
-                <p>Iconify Flat Icon Set</p>
-            </div>
-            <!-- end col-6 -->
-            <div class="col-12"><figure><img src="images/works-detail05.jpg" alt="Image"></figure></div>
-            <!-- end col-12 -->
             <div class="col-12">
                 <h3>Thanks for Watching</h3>
             </div>

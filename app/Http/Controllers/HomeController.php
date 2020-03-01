@@ -40,8 +40,9 @@ class HomeController extends Controller {
 
     public function case($id)
     {
+        $project = Project::where('id', '=', $id)->firstOrFail();
         return view('home.case', [
-
+            'project' => $project
         ]);
     }
 
