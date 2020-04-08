@@ -30,7 +30,7 @@
                 <h6>{{trans('case.link')}}</h6>
                 <p><a href="//{{$project->link}}" target="_blank">Смотреть сайт</a></p>
             </div>
-            <div class="col-12">
+            <div class="col-12 side-menu">
                 <h6>Понравился сайт? Хочешь такой же?</h6>
                 <ul>
                     <li><a href="tel:87717469953">+7 771 746 99 53</a></li>

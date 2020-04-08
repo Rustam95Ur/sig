@@ -15,9 +15,6 @@
                     <div class="swiper-slide" data-background="{{Voyager::image($slider->image)}}">
                         <div class="slide-inner">
                             <h2>{{$slider->text}}</h2>
-                            <div class="link">
-                                <a href="{{route('cases')}}">{{trans('button.see-case')}}</a>
-                            </div>
                             <!-- end link -->
                         </div>
                         <!-- end slide-inner -->
