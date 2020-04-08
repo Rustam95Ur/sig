@@ -31,7 +31,7 @@
                 <div class="col-4 wow fadeInUp">
                     <h5>{{trans('contact.email')}}</h5>
                     <address>
-                        <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>
+                        <a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a>
                     </address>
                 </div>
                 <!-- end col-12 -->

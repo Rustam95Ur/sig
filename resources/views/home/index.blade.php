@@ -148,7 +148,7 @@
         <div class="container wow fadeInUp">
             <h6>{{trans('home.work-with-header')}}</h6>
             <h2>{{trans('home.work-with-text')}}</h2>
-            <p><a href="#">hire-us@smartinnovationgroup.kz</a></p>
+            <p><a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a></p>
             <p><a href="tel:87717469953">8 771 746 99 53</a></p>
             <p><a href="tel:87717838759">8 771 783 87 59</a></p>
         </div>
