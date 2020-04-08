@@ -38,7 +38,7 @@
                     <div class="titles">
                         <h2>{{trans('home.recent-works-header')}}</h2>
                         <p>{{trans('home.recent-works-text')}}</p>
-                        <div class="custom-btn"><a href="{{route('home')}}">{{trans('button.see-case')}}<span></span>
+                        <div class="custom-btn"><a href="{{route('cases')}}">{{trans('button.see-case')}}<span></span>
                                 <i></i></a></div>
                         <!-- end custom-btn -->
                     </div>
