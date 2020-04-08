@@ -28,10 +28,14 @@
             <!-- end col-6 -->
             <div class="col-md-6">
                 <h6>{{trans('case.link')}}</h6>
-                <p><a href="//{{$project->link}}" target="_blank">{{$project->link}}</a></p>
+                <p><a href="//{{$project->link}}" target="_blank">Смотреть сайт</a></p>
             </div>
             <div class="col-12">
-                <h3>Thanks for Watching</h3>
+                <h6>Понравился сайт? Хочешь такой же?</h6>
+                <ul>
+                    <li><a href="tel:87717469953">+7 771 746 99 53</a></li>
+                    <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
+                </ul>
             </div>
             <!-- end col-12 -->
         </div>

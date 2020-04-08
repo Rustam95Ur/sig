@@ -7,7 +7,7 @@
                 <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
                 <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
                 <hr class="devide_line">
-                <li><a href="tel:87717469953">T: +7 771 746 99 53</a></li>
+                <li><a href="tel:87717469953">+7 771 746 99 53</a></li>
                 <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
             </ul>
         </div>
