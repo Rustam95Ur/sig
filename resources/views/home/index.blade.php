@@ -14,7 +14,7 @@
                 @foreach($sliders as $slider)
                     <div class="swiper-slide" data-background="{{Voyager::image($slider->image)}}">
                         <div class="slide-inner">
-                            <h2>Space in typographical terms is usually</h2>
+                            <h2>{{$slider->text}}</h2>
                             <div class="link">
                                 <a href="{{route('cases')}}">{{trans('button.see-case')}}</a>
                             </div>
