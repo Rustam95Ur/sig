@@ -6,6 +6,9 @@
                 <li><a href="{{route('about')}}">{{trans('header.about')}}</a></li>
                 <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
                 <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
+                <hr class="devide_line">
+                <li><a href="tel:87717469953">T: +7 771 746 99 53</a></li>
+                <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
             </ul>
         </div>
         <!-- end side-menu -->
@@ -21,9 +24,9 @@
         <!-- end sides -->
         <div class="sides"><h2>{{trans('header.slogan')}}</h2>
             <address>{{trans('header.address')}}<br>
-                <a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a>
-                <a href="tel:87717469953">8 771 746 99 53</a>
-                <a href="tel:87717838759">8 771 783 87 59</a>
+                <a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a>
+                <a href="tel:87717469953">+7 771 746 99 53</a>
+                <a href="tel:87717838759">+7 771 783 87 59</a>
             </address>
         </div>
         <!-- end sides -->

@@ -25,7 +25,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp">
                 <h5>{{trans('footer.contacts')}}</h5>
                 <address>
-                    <p><a href="mailto:info@smartinnovationgroup.kz">info@smartinnovationgroup.kz</a></p>
+                    <p><a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a></p>
                     <p><a href="tel:87717469953">8 771 746 99 53</a></p>
                     <p><a href="tel:87717838759">8 771 783 87 59</a></p>
                 </address>

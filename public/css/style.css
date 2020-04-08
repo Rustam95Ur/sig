@@ -823,8 +823,8 @@ moe .color-dark .left-side ul li a:hover {
   margin-top: 50px;
 }
 .header .page-title h2 {
-  font-weight: 700;
-  font-size: 8vw;
+  font-weight: 600;
+  font-size: 4vw;
   margin-bottom: 20px;
 }
 .header .page-title h4 {
@@ -1447,7 +1447,7 @@ moe .color-dark .left-side ul li a:hover {
   display: block;
 }
 .project-box .project-content h3 {
-  font-size: 27px;
+  font-size: 20px;
   display: block;
 }
 .project-box .project-content h3 a {
@@ -2421,7 +2421,7 @@ moe .color-dark .left-side ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 10px;
 }
 .footer .sub-footer ul {
   display: inline-block;
@@ -2669,7 +2669,7 @@ moe .color-dark .left-side ul li a:hover {
   }
 
   .header .page-title h2 {
-    font-size: 14vw;
+    font-size: 8vw;
   }
 
   .works ul li {
@@ -2720,7 +2720,7 @@ moe .color-dark .left-side ul li a:hover {
   }
 
   .work-with-us h2 {
-    font-size: 9vw;
+    font-size: 7vw;
   }
 
   .logos ul li figure {
@@ -2729,10 +2729,10 @@ moe .color-dark .left-side ul li a:hover {
 
   .logos ul li figure img {
     height: 65px;
-  }
+  }F
 
   .about-intro h2 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .main-services .titles {
@@ -2757,4 +2757,7 @@ moe .color-dark .left-side ul li a:hover {
 }
 .case-image {
     width: unset !important;
+}
+.devide_line {
+  color: #fff;
 }

@@ -174,49 +174,49 @@
                 <!-- end titles -->
             </div>
             <!-- end col-12 -->
-            <div class="col-lg-3 col-md-6">
-                <figure>
-                    <img src="images/team01.jpg" alt="Image">
-                    <figcaption>
-                        <h5>Sasha O'Kharin</h5>
-                        <span>Freelance Creative Developer</span>
-                        <a href="#">Linkedin</a>
-                    </figcaption>
-                </figure>
-            </div>
+            {{--<div class="col-lg-3 col-md-6">--}}
+                {{--<figure>--}}
+                    {{--<img src="images/team01.jpg" alt="Image">--}}
+                    {{--<figcaption>--}}
+                        {{--<h5>Sasha O'Kharin</h5>--}}
+                        {{--<span>Freelance Creative Developer</span>--}}
+                        {{--<a href="#">Linkedin</a>--}}
+                    {{--</figcaption>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
             <!-- end col-3 -->
-            <div class="col-lg-3 col-md-6">
-                <figure>
-                    <img src="images/team02.jpg" alt="Image">
-                    <figcaption>
-                        <h5>Oleg Pachorski</h5>
-                        <span>Freelance Creative Developer</span>
-                        <a href="#">Linkedin</a>
-                    </figcaption>
-                </figure>
-            </div>
+            {{--<div class="col-lg-3 col-md-6">--}}
+                {{--<figure>--}}
+                    {{--<img src="images/team02.jpg" alt="Image">--}}
+                    {{--<figcaption>--}}
+                        {{--<h5>Oleg Pachorski</h5>--}}
+                        {{--<span>Freelance Creative Developer</span>--}}
+                        {{--<a href="#">Linkedin</a>--}}
+                    {{--</figcaption>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
             <!-- end col-3 -->
-            <div class="col-lg-3 col-md-6">
-                <figure>
-                    <img src="images/team03.jpg" alt="Image">
-                    <figcaption>
-                        <h5>Alex Avdeivva</h5>
-                        <span>Freelance Creative Developer</span>
-                        <a href="#">Linkedin</a>
-                    </figcaption>
-                </figure>
-            </div>
+            {{--<div class="col-lg-3 col-md-6">--}}
+                {{--<figure>--}}
+                    {{--<img src="images/team03.jpg" alt="Image">--}}
+                    {{--<figcaption>--}}
+                        {{--<h5>Alex Avdeivva</h5>--}}
+                        {{--<span>Freelance Creative Developer</span>--}}
+                        {{--<a href="#">Linkedin</a>--}}
+                    {{--</figcaption>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
             <!-- end col-3 -->
-            <div class="col-lg-3 col-md-6">
-                <figure>
-                    <img src="images/team04.jpg" alt="Image">
-                    <figcaption>
-                        <h5>Andrey Kolbasin</h5>
-                        <span>Freelance Creative Developer</span>
-                        <a href="#">Linkedin</a>
-                    </figcaption>
-                </figure>
-            </div>
+            {{--<div class="col-lg-3 col-md-6">--}}
+                {{--<figure>--}}
+                    {{--<img src="images/team04.jpg" alt="Image">--}}
+                    {{--<figcaption>--}}
+                        {{--<h5>Andrey Kolbasin</h5>--}}
+                        {{--<span>Freelance Creative Developer</span>--}}
+                        {{--<a href="#">Linkedin</a>--}}
+                    {{--</figcaption>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
             <!-- end col-3 -->
         </div>
         <!-- end row -->
@@ -246,7 +246,7 @@
     <div class="container wow fadeInUp">
         <h6>{{trans('home.work-with-header')}}</h6>
         <h2>{{trans('home.work-with-text')}}</h2>
-        <p><a href="#">hire-us@smartinnovationgroup.kz</a></p>
+        <p><a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a></p>
         <p><a href="tel:87717469953">8 771 746 99 53</a></p>
         <p><a href="tel:87717838759">8 771 783 87 59</a></p>
     </div>
