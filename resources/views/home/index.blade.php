@@ -116,7 +116,7 @@
             <ul>
                 @foreach($platforms as $platform)
                     <li class="wow fadeInUp" data-wow-delay="0s">
-                        <figure><img src="{{Voyager::image($platform->image)}}" alt=""></figure>
+                        <figure><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt=""></figure>
                         <h5>{{$platform->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h5>
                         <span class="odometer" data-count="{{count($platform->projects)}}" data-status="yes">0</span>
                     </li>
