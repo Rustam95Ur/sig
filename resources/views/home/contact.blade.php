@@ -38,7 +38,8 @@
                 <div class="col-lg-7 wow fadeInUp">
                     <div class="contact-form">
                         <h5>{{trans('contact.form')}}</h5>
-                        <form id="contact" method="post">
+                        <form id="contact" method="post" action="{{ url('/send-message') }}">
+                            {{ csrf_field() }}
                             <div class="form-group">
                                 <input type="text" name="name" id="name" autocomplete="off" required>
                                 <label for="name">{{trans('contact.name')}}</label>
