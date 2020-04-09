@@ -98,8 +98,8 @@
     <section class="showreel">
         <div class="container">
             <div class="video reveal-effect masker wow">
-                <video src="videos/video.mp4" autoplay loop muted></video>
-                <h2>SHOWREEL</h2>
+                <img src="../../../images/banner/about.jpg" alt="">
+                <h2>sigdev.kz</h2>
                 <!-- end content -->
             </div>
             <!-- end video -->

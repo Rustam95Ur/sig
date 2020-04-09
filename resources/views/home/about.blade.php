@@ -9,7 +9,7 @@
 </header>
 <section class="page-header">
     <div class="video-bg">
-        <video src="videos/video2.mp4" loop autoplay muted></video>
+        <img src="../../../images/banner/about.jpg" alt="">
     </div>
     <!-- end video-bg -->
 </section>
