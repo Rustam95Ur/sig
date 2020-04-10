@@ -6,19 +6,29 @@ use App\Models\Client;
 use App\Models\Platform;
 use App\Models\Project;
 use App\Models\Slider;
+use Telegram\Bot\Laravel\Facades\Telegram;
 
 class HomeController extends Controller {
 
     public function index()
     {
-        $projects = Project::where('in_main', '=', '1')->where('status', '=', 'ACTIVE')->with('platform')->get();
+        $clientIP  = \Request::ip();
+        $text      = "Пользователь с IP: $clientIP вошел на сайт";
+        $projects  = Project::where('in_main', '=', '1')->where('status', '=', 'ACTIVE')->with('platform')->get();
         $platforms = Platform::with('projects')->get();
-        $sliders = Slider::all();
-        $clients = Client::all();
+        $sliders   = Slider::all();
+        $clients   = Client::all();
+
+        Telegram::sendMessage([
+            'chat_id'    => -1001294566431,
+            'parse_mode' => 'HTML',
+            'text'       => $text
+        ]);
+
         return view('home.index', [
             'sliders'   => $sliders,
-            'projects'   => $projects,
-            'platforms'   => $platforms,
+            'projects'  => $projects,
+            'platforms' => $platforms,
             'clients'   => $clients,
         ]);
     }
