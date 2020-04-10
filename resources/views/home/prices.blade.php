@@ -92,7 +92,7 @@
                                     <div class="card mb-5 mb-lg-0">
                                         <div class="card-body">
                                             <h5 class="card-title text-muted text-uppercase text-center">SMM-Продвижение</h5>
-                                            <h6 class="card-price text-center">от 300 000<span class="period">/от 30 дней</span></h6>
+                                            <h6 class="card-price text-center">от 30 000<span class="period">/неделя</span></h6>
                                             <hr>
                                             <button type="button" class="btn btn-block btn-primary text-uppercase" data-toggle="modal" data-target="#exampleModal" data-whatever="SMM-Продвижение">Хочу!</button>
                                         </div>
