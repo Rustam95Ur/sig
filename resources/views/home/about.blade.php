@@ -9,7 +9,7 @@
 </header>
 <section class="page-header">
     <div class="video-bg">
-        <img src="../../../images/banner/about.jpg" alt="">
+        <img src="../../../images/banner/about.jpg" alt="about">
     </div>
     <!-- end video-bg -->
 </section>

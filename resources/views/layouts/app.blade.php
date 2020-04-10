@@ -13,6 +13,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="{{Voyager::setting('site.description')}}">
+    <meta name="keywords" content="разработка сайтов алматы,разработка, сайт, приложение, smm, landing page, интернет магазин, мобильные приложения, IT решения, бизнес">
+    <meta name="author" content="Pelivan Eduard">
     <title>{{Voyager::setting('site.title')}}</title>
     <!-- FAVICON FILES -->
 

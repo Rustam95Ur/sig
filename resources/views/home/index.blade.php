@@ -80,7 +80,7 @@
                 <!-- end col-12 -->
                 @foreach($platforms as $platform)
                     <div class="col-lg-3 col-md-6">
-                        <figure class="reveal-effect masker wow"><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt="">
+                        <figure class="reveal-effect masker wow"><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt="platform">
                             <figcaption>
                                 <span>{{$platform->id}}</span>
                                 <h4>{{$platform->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h4>
@@ -98,7 +98,7 @@
     <section class="showreel">
         <div class="container">
             <div class="video reveal-effect masker wow">
-                <img src="../../../images/banner/about.jpg" alt="">
+                <img src="../../../images/banner/about.jpg" alt="about">
                 <h2>sigdev.kz</h2>
                 <!-- end content -->
             </div>
@@ -116,7 +116,7 @@
             <ul>
                 @foreach($platforms as $platform)
                     <li class="wow fadeInUp" data-wow-delay="0s">
-                        <figure><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt=""></figure>
+                        <figure><img src="/storage/{{ json_decode($platform->image)[0]->download_link}}" alt="platform"></figure>
                         <h5>{{$platform->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h5>
                         <span class="odometer" data-count="{{count($platform->projects)}}" data-status="yes">0</span>
                     </li>
