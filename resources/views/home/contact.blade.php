@@ -46,11 +46,11 @@
                             </div>
                             <!-- end form-group -->
                             <div class="form-group">
-                                <input type="text" name="email" id="email" autocomplete="off" required>
+                                <input type="email" pattern="[^ @]*@[^ @]*" name="email" id="email" autocomplete="off" required>
                                 <label for="email">Email</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="phone" id="phone" autocomplete="off" required>
+                                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="phone" id="phone" autocomplete="off" required>
                                 <label for="phone">{{trans('contact.phone')}}</label>
                             </div>
                             <!-- end form-group -->

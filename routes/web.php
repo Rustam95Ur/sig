@@ -21,8 +21,10 @@ Route::group([
     Route::get('/case/{id}', 'HomeController@case')->name('case');
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/contact', 'HomeController@contact')->name('contact');
+    Route::get('/prices', 'HomeController@prices')->name('prices');
     Route::get('/updated-activity', 'TelegramBotController@updatedActivity');
     Route::post('/send-message', 'TelegramBotController@storeMessage');
+    Route::post('/send-order', 'TelegramBotController@sendOrder');
 });
 
 Route::group(['prefix' => 'admin'], function () {

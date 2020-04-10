@@ -25,7 +25,7 @@ class TelegramBotController extends Controller
             'message' => 'required',
         ]);
 
-        $text = "A new contact us query from sigdev.kz\n"
+        $text = "Контактная форма с сайта sigdev.kz\n"
             . "<b>Name:</b>\n"
             . "$request->name\n"
             . "<b>Email:</b>\n"
@@ -45,7 +45,7 @@ class TelegramBotController extends Controller
             ]);
 
             return view('home.success', [
-                'success'   => 'Ваша заявка принята, Мы с вами свяжемся!',
+                'success'   => "$request->name, Ваша заявка принята, Мы с вами свяжемся!",
             ]);
 
         } catch (Exception $ex) {
@@ -53,9 +53,41 @@ class TelegramBotController extends Controller
                 'error'   => 'Возникла проблема при отправке :( свяжитесь с нами по телефону +7 771 746 9953',
             ]);
         }
+    }
 
+    //Метод отправки уведомления в телеграм
+    public function sendOrder(Request $request)
+    {
+       // dd($request);
+        $request->validate([
+            'name'    => 'required',
+            'phone'   => 'required',
+            'message' => 'required',
+        ]);
 
+        $text = "Предварительный заказ с сайта sigdev.kz\n"
+            . "<b>Name:</b>\n"
+            . "$request->name\n"
+            . "<b>Phone:</b>\n"
+            . "$request->phone\n"
+            . "<b>Message: </b>\n"
+            . $request->message;
 
-        //return redirect()->back();
+        try {
+            Telegram::sendMessage([
+                'chat_id' => -1001294566431,
+                'parse_mode' => 'HTML',
+                'text' => $text
+            ]);
+
+            return view('home.success', [
+                'success'   => "Ваша заявка принята, Мы с вами свяжемся!",
+            ]);
+
+        } catch (Exception $ex) {
+            return view('home.error', [
+                'error'   => 'Возникла проблема при отправке :( свяжитесь с нами по телефону +7 771 746 9953',
+            ]);
+        }
     }
 }

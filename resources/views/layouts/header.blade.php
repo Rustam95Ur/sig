@@ -6,6 +6,7 @@
                 <li><a href="{{route('about')}}">{{trans('header.about')}}</a></li>
                 <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
                 <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
+                <li><a href="{{route('prices')}}">{{trans('header.prices')}}</a></li>
                 <hr class="devide_line">
                 <li><a href="tel:87717469953">+7 771 746 99 53</a></li>
                 <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
@@ -59,6 +60,7 @@
                 <li><a href="{{route('about')}}">{{trans('header.about')}}</a></li>
                 <li><a href="{{route('cases')}}">{{trans('header.case')}}</a></li>
                 <li><a href="{{route('contact')}}">{{trans('header.contact')}}</a></li>
+                <li><a href="{{route('prices')}}">{{trans('header.prices')}}</a></li>
             </ul>
         </div>
         <!-- end main-menu -->

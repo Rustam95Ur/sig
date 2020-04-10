@@ -49,11 +49,13 @@ class HomeController extends Controller {
 
     public function contact()
     {
-        return view('home.contact', [
-
-        ]);
+        return view('home.contact', []);
     }
 
+    public function prices()
+    {
+        return view('home.prices',[]);
+    }
 
 
 
