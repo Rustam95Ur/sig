@@ -12,10 +12,18 @@
                 <!-- end career -->
             </div>
             <!-- end col-12 -->
-            <div class="col-lg-5 wow fadeInUp">
+            <div class="col-lg-3 wow fadeInUp">
                 <figure class="logo"> <img src="{{asset('images/logo.png')}}" alt="Image"> </figure>
             </div>
-            <!-- end col-5 --> <div class="col-lg-4 col-md-6 wow fadeInUp">
+            <div class="col-lg-3 social">
+                <h5>Мы в социальных сетях</h5>
+                <div class="social">
+                    <span><a href="https://www.instagram.com/smartinnovationgroup/"><i class="fab fa-instagram fa-2x"></i></a></span>
+                    <span><a href="https://www.facebook.com/smartinnovationgroup2019/"><i class="fab fa-facebook-square fa-2x"></i></a></span>
+                    <span><a href="https://wa.me/77717838759?text=Здравствуйте!" target="_blank"><i class="fab fa-whatsapp-square fa-2x"></i></a></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp">
                 <h5>{{trans('footer.address')}}</h5>
                 <address>
                     {{trans('header.address')}}

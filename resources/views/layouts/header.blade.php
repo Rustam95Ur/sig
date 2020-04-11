@@ -9,7 +9,11 @@
                 <li><a href="{{route('prices')}}">{{trans('header.prices')}}</a></li>
                 <hr class="devide_line">
                 <li><a href="tel:87717469953">+7 771 746 99 53</a></li>
-                <li><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank">INSTAGRAM</a></li>
+                <li>
+                    <span><a href="https://www.instagram.com/smartinnovationgroup/" target="_blank"><i class="fab fa-instagram fa-1x"></i></a></span>
+                    <span><a href="https://www.facebook.com/smartinnovationgroup2019/" target="_blank"><i class="fab fa-facebook-square fa-1x"></i></a></span>
+                    <span><a href="https://wa.me/77717838759?text=Здравствуйте!" target="_blank"><i class="fab fa-whatsapp-square fa-1x"></i></a></span>
+                </li>
             </ul>
         </div>
         <!-- end side-menu -->
@@ -28,6 +32,8 @@
                 <a href="mailto:dev@sigdev.kz">dev@sigdev.kz</a>
                 <a href="tel:87717469953">+7 771 746 99 53</a>
                 <a href="tel:87717838759">+7 771 783 87 59</a>
+                <hr>
+                <span>Напишите нам на Whats App<a href="https://wa.me/77717838759?text=Здравствуйте!" target="_blank"><i class="fab fa-whatsapp-square fa-2x"></i></a></span>
             </address>
         </div>
         <!-- end sides -->

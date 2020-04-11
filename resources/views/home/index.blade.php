@@ -49,11 +49,13 @@
                         <div class="project-box">
                             <figure class="project-image reveal-effect masker wow">
                                 <a href="{{Voyager::image($project->image)}}" data-fancybox>
-                                    <img src="{{Voyager::image($project->image)}}" alt="{{$project->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}"></a>
+                                    <img src="{{Voyager::image($project->image)}}" alt="{{$project->title}}"></a>
                             </figure>
                             <div class="project-content">
-                                <h3><a href="{{route('cases')}}"
-                                       data-fancybox>{{$project->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a>
+                                <h3>
+                                    <a href="{{route('cases')}}"
+                                       data-fancybox>{{$project->title}}
+                                    </a>
                                 </h3>
                                 <small>{{$project->platform->title}}</small>
                             </div>
